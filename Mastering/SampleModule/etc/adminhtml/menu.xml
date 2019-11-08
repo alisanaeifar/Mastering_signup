@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mastering_SampleModule::mastering" title="Mastering"
+             module="Mastering_SampleModule" resource="Mastering_SampleModule::mastering"
+             translate="title" sortOrder="900" action="mastering"/>
+
+
+        <add id="Mastering_SampleModule::signup" title="signup" module="Mastering_SampleModule" sortOrder="51" resource="Mastering_SampleModule::signup"/>
+        <add id="Mastering_SampleModule::post" title="Display signin person" module="Mastering_SampleModule" sortOrder="10" action="mastering/Post/Show" resource="Mastering_SampleModule::post" parent="Mastering_SampleModule::signup"/>
+        <add id="Mastering_SampleModule::configuration" title="Configuration" module="Mastering_SampleModule" sortOrder="99" parent="Mastering_SampleModule::signup" action="mastering/Post/Config" resource="Mastering_SampleModule::configuration"/>
+
+        <!--        <add id="Mastering_SampleModule::main_menu" title="Simple News"-->
+        <!--             module="Mastering_SampleModule" sortOrder="20"-->
+        <!--             resource="Mastering_SampleModule::simplenews" />-->
+        <!--        <add id="Mastering_SampleModule::add_news" title="Add News"-->
+        <!--             module="Mastering_SampleModule" sortOrder="1" parent="Mastering_SampleModule::main_menu"-->
+        <!--             action="simplenews/news/new" resource="Mastering_SampleModule::manage_news" />-->
+        <!--        <add id="Mastering_SampleModule::manage_news" title="Manage News"-->
+        <!--             module="Mastering_SampleModule" sortOrder="2" parent="Mastering_SampleModule::main_menu"-->
+        <!--             action="simplenews/news/index" resource="Mastering_SampleModule::manage_news" />-->
+        <!--        <add id="Mastering_SampleModule::configuration" title="Configurations"-->
+        <!--             module="Mastering_SampleModule" sortOrder="3" parent="Mastering_SampleModule::main_menu"-->
+        <!--             action="adminhtml/system_config/edit/section/simplenews"-->
+        <!--             resource="Mastering_SampleModule::configuration" />-->
+    </menu>
+</config>
+
+    <!--<?xml version="1.0"?>-->
+<!--<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">-->
+<!--    <menu>-->
+<!--        <add id="Mastering_SampleModule::mastering" title="Mastering"-->
+<!--             module="Mastering_SampleModule" resource="Mastering_SampleModule::mastering"-->
+<!--             translate="title" sortOrder="900" action="mastering"/>-->
+<!--    </menu>-->
+<!--</config>-->

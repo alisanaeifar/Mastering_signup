@@ -1,0 +1,46 @@
+<?php
+///** @var \Mastering\SampleModule\Block\Hello $block */
+//?>
+<?php //foreach ($block->getItems() as $item):?>
+<!--<p>--><?php //echo $item->getName(); ?><!--: --><?php //echo $item->getDescription(); ?><!--</p>-->
+<?php //endforeach; ?>
+
+<?php
+/** @var \Mastering\SampleModule\Block\Hello $block */
+?>
+<?php echo $block->getLabel(); ?>
+<?php foreach ($block->getItems() as $item):?>
+    <p>
+        <?php echo $item->getName(); ?>: <?php echo $item->getDescription(); ?>
+    </p>
+<?php endforeach; ?>
+
+<h1>Sign_Up page</h1>
+
+<form action="<?php echo $this->getUrl("signup/index/save") ?>" method="post">
+<label><b>Sign_Up</b><br>
+    <br><br>
+    <input type="text" name="name">
+<!--    <input type="hidden" name="approve" value="0">-->
+    <input class="action primary" type="submit" name="sub" value="Post Signup" style="border-radius: 0px;padding: 5px;">
+
+
+
+<!--    <input type="text" name="datetimepicker" id="datetimepicker" value="" class="datetimepicker">-->
+<!--    <script>-->
+<!--        require([-->
+<!--            'jquery',-->
+<!--            'mage/calendar'-->
+<!--        ], function($){-->
+<!--            $('#datetimepicker').datetimepicker({-->
+<!--                dateFormat: 'mm/dd/yy',-->
+<!--                timeFormat: 'HH:mm:ss',-->
+<!--                changeMonth: true,-->
+<!--                changeYear: true,-->
+<!--                showsTime: true-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
+<!---->
+<!--    <input type="submit" value="Send hello informations">-->
+</form>
