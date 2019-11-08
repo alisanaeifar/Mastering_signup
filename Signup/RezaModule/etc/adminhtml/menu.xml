@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Signup_RezaModule::signup" title="Signup"
+             module="Signup_RezaModule" resource="Signup_RezaModule::signup"
+             translate="title" sortOrder="900" action="signup"/>
+    </menu>
+</config>

@@ -1,0 +1,23 @@
+
+
+
+<h1>Signup page</h1>
+///** @var \Signup\RezaModule\Hello  */
+<form action="<?php echo $this->getUrl("signup/index/save") ?>" method="post">
+    <label><b>Sign_Up</b><br>
+        <br><br>
+        <input type="text" name="name">
+        <input type="text" name="datepicker" id="datepicker" value="" class="datepicker">
+        <script>
+            require(["jquery", "mage/calendar"], function($){
+                $("#datepicker").datepicker({
+                    showMonthAfterYear: false,
+                    dateFormat:'mm/dd/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '2000:2020',
+                })
+            });
+        </script>
+        <input class="action primary" type="submit" name="sub" value="Post Signup" style="border-radius: 0px;padding: 5px;">
+</form>
